@@ -1,0 +1,170 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --para: 1rem;
+}
+body{
+    background-color: var(--LightGray);
+    padding: 1rem;
+    font-family: "Karla";
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    width: 600px;
+    height: 400px;
+    background-color: var(--LightGray);
+    display: flex;
+    flex-direction: column;
+}
+.main1{
+    width: 600px;
+    height: 170px;
+    background-color: white;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+.main1 h3{
+    color: var(--Cyan);
+}
+.main1 b{
+    color: var(--BrightYellow);
+}
+.main1 p{
+    color: var(--GrayishBlue);
+    font-size: var(--para);
+}
+.main2{
+    width: 600px;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+}
+.div1{
+    width: 300px;
+    height: 230px;
+    background-color: darkcyan;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    color: var(--LightGray);
+}
+.div1 h4{
+    font-weight: 700;
+}
+.product-details{
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    color: var(--LightGray);
+}
+.product-price{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.product-details small{
+    font-size: 0.8rem;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 5px;
+}
+.price-buttn{
+    margin: 1rem 0;
+}
+.price-buttn button{
+    background-color: var(--BrightYellow);
+    display: inline-block;
+    height: 40px;
+    width: 220px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    border: none;
+    color: var(--LightGray);
+    font-weight: 700;
+
+}
+.div2{
+    width: 300px;
+    height: 230px;
+    background-color:var(--Cyan);
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+.div2 h4{
+    color: var(--LightGray);
+}
+.div2 p{
+    color:var(--LightGray);
+}
+
+@media (max-width: 677px) and (min-width: 375px) {
+    .main{
+        width: 300px;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main1{
+        width: 100%;
+        height: 280px;
+        padding: 1.5rem 1rem 0rem 1rem;
+        justify-content: normal;
+    }
+    .main1 h3,b{
+        padding-bottom: 0.8rem;
+    }
+    .main1 p{
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .main2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 340px;
+    }
+    .div1{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .product-details{
+        margin: 1.5rem 0rem;
+    }
+    .div2{
+        padding: 0 1rem 0 1rem ;
+    }
+    .div2 h4{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    .div2 p{
+        line-height: 1.5rem;
+    }
+}
